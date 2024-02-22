@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+
+    <title>Pasterlaria do Beisola</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- modelos de pizza na lista e no carrinho -->
+    <div class="models">
+
+        <!-- pastel na lista -->
+        <div class="pastel-item">
+            <a href="">
+                <div class="pastel-item--img"><img src="" /></div>
+                <div class="pastel-item--add">+</div>
+            </a>
+            <div class="pastel-item--price">R$ --</div>
+            <div class="pastel-item--name">--</div>
+            <div class="pastel-item--desc">--</div>
+        </div>
+
+        <!-- pastel no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        <h1>Pasterlaria do Beisola</h1>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>Pasteis</h2>
+
+        <div class="pastel-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Seus pasteis</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .pastelWindowArea -->
+    <div class="pastelWindowArea">
+        <div class="pastelWindowBody">
+            <div class="pastelInfo--cancelMobileButton">Voltar</div>
+            <div class="pastelBig">
+                <img src="" />
+            </div>
+            <div class="pastelInfo">
+                <h1>--</h1>
+                <div class="pastelInfo--desc">--</div>
+                <div class="pastelInfo--sizearea">
+                    <div class="pastelInfo--sector">Tamanho</div>
+                    <div class="pastelInfo--sizes">
+                        <div data-key="P" class="pastelInfo--size">PEQUENA <span>--</span></div>
+                        <div data-key="M" class="pastelInfo--size">MÉDIA <span>--</span></div>
+                        <div data-key="G" class="pastelInfo--size selected">GRANDE <span>--</span></div>
+                    </div>
+                </div>
+                <div class="pastelInfo--pricearea">
+                    <div class="pastelInfo--sector">Preço</div>
+                    <div class="pastelInfo--price">
+                        <div class="pastelInfo--actualPrice">R$ --</div>
+                        <div class="pastelInfo--qtarea">
+                            <button class="pastelInfo--qtmenos">-</button>
+                            <div class="pastelInfo--qt">1</div>
+                            <button class="pastelInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pastelInfo--addButton">Adicionar ao carrinho</div>
+                <div class="pastelInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-- /janela modal .pastelWindowArea -->
+
+    <script src="pastel.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
